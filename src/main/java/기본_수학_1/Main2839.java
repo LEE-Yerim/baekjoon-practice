@@ -1,3 +1,5 @@
+package 기본_수학_1;
+
 import java.io.*;
 
 public class Main2839 {

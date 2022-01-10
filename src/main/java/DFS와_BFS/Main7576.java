@@ -1,3 +1,5 @@
+package DFS와_BFS;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -72,8 +74,7 @@ public class Main7576 {
             }
         }
     }
-    //최소 비용 문제(최단 거리 문제)는 bfs가 적당
-    //dfs 로 풀이하면 시간초과
+
     public static void main(String[] args) throws IOException {
         solution();
     }

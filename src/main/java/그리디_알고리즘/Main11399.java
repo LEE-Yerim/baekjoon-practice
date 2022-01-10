@@ -1,3 +1,5 @@
+package 그리디_알고리즘;
+
 import java.io.*;
 import java.util.Arrays;
 

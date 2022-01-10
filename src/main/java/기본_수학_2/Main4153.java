@@ -1,3 +1,5 @@
+package 기본_수학_2;
+
 import java.io.*;
 import java.util.Arrays;
 

@@ -1,3 +1,5 @@
+package 정렬;
+
 import java.io.*;
 
 public class Main10989 {
