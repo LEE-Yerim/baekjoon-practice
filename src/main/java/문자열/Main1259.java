@@ -1,3 +1,5 @@
+package 문자열;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,19 +9,18 @@ public class Main1259 {
 
     public static void main(String[] args) throws IOException {
         String str = "";
-        while(!(str = br.readLine()).equals("0")) {
+        while (!(str = br.readLine()).equals("0")) {
             String[] numbers = str.split("");
             boolean flag = true;
-            for(int i = 0; i<numbers.length/2;i++) {
+            for (int i = 0; i < numbers.length / 2; i++) {
                 if (!numbers[i].equals(numbers[numbers.length - 1 - i])) {
                     flag = false;
                     break;
                 }
             }
-            if(flag) {
+            if (flag) {
                 System.out.println("yes");
-            }
-            else {
+            } else {
                 System.out.println("no");
             }
         }

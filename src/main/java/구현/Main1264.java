@@ -1,3 +1,5 @@
+package 구현;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,8 +12,8 @@ public class Main1264 {
         String str = "";
         while (!(str = br.readLine()).equals("#")) {
             int count = 0;
-            for(String character : str.toLowerCase().split("")) {
-                if(character.equals("a")||character.equals("e")||character.equals("i")||character.equals("o")||character.equals("u")) {
+            for (String character : str.toLowerCase().split("")) {
+                if (character.equals("a") || character.equals("e") || character.equals("i") || character.equals("o") || character.equals("u")) {
                     count++;
                 }
             }

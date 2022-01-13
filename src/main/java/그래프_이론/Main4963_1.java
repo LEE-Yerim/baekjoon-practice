@@ -1,3 +1,5 @@
+package 그래프_이론;
+
 import java.io.*;
 import java.util.StringTokenizer;
 

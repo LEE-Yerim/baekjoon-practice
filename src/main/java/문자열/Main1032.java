@@ -1,3 +1,5 @@
+package 문자열;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -23,10 +25,9 @@ public class Main1032 {
                     break;
                 }
             }
-            if(flag) {
+            if (flag) {
                 answer[i] = "?";
-            }
-            else {
+            } else {
                 answer[i] = str;
             }
         }

@@ -1,28 +1,29 @@
+package 구현;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main2522 {
+public class Main10990 {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static void solution() throws IOException {
         int n = Integer.parseInt(br.readLine());
-        for (int i = 1; i <= n; i++) {
-            for (int j = n - i; j > 0; j--) {
-                System.out.print(" ");
-            }
-            for (int j = 0; j < i; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
+        for (int i = 0; i < n - 1; i++) {
+            System.out.print(" ");
         }
-        for (int i = 1; i < n; i++) {
-            for (int j = 0; j < i; j++) {
+        System.out.print("*");
+        System.out.println();
+
+        for (int j = 1; j < n; j++) {
+            for (int i = 0; i < n - j - 1; i++) {
                 System.out.print(" ");
             }
-            for (int j = n - i; j > 0; j--) {
-                System.out.print("*");
+            System.out.print("*");
+            for (int i = 0; i < j * 2 - 1; i++) {
+                System.out.print(" ");
             }
+            System.out.print("*");
             System.out.println();
         }
     }
