@@ -12,7 +12,7 @@ public class Main1009 {
             long a = Integer.parseInt(ab[0]);
             long b = Integer.parseInt(ab[1]);
             long datas = (long) Math.pow(a, b);
-            System.out.println(datas );
+            System.out.println(datas);
         }
     }
 

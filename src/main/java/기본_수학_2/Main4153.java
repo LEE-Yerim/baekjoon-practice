@@ -12,19 +12,18 @@ public class Main4153 {
         while (!(str = br.readLine()).equals("0 0 0")) {
             int[] lengths = Arrays.stream(str.split(" ")).mapToInt(Integer::parseInt).toArray();
             int max_length = 0;
-            for(int length : lengths) {
+            for (int length : lengths) {
                 max_length = Math.max(max_length, length);
             }
             int double_sum = 0;
-            for(int length : lengths) {
-                if(length!=max_length) {
-                    double_sum += Math.pow(length,2);
+            for (int length : lengths) {
+                if (length != max_length) {
+                    double_sum += Math.pow(length, 2);
                 }
             }
-            if(Math.pow(max_length, 2)==double_sum) {
+            if (Math.pow(max_length, 2) == double_sum) {
                 System.out.println("right");
-            }
-            else {
+            } else {
                 System.out.println("wrong");
             }
         }

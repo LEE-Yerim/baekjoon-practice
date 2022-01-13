@@ -20,8 +20,7 @@ public class Main4949 {
                 if (character.equals(")")) {
                     if (!stack.isEmpty() && stack.peek().equals("(")) {
                         stack.pop();
-                    }
-                    else {
+                    } else {
                         stack.push(")");
                     }
                 }
@@ -31,8 +30,7 @@ public class Main4949 {
                 if (character.equals("]")) {
                     if (!stack.isEmpty() && stack.peek().equals("[")) {
                         stack.pop();
-                    }
-                    else {
+                    } else {
                         stack.push("]");
                     }
                 }

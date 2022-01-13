@@ -20,6 +20,7 @@ public class Main2609 {
         System.out.println(j);
         System.out.println(A * B / j);
     }
+
     public static void main(String[] args) throws IOException {
         solution();
     }
