@@ -13,10 +13,9 @@ public class Main11399 {
         Arrays.sort(times);
         int sum = 0;
         for (int i = 0; i < times.length; i++) {
-            if(i == 0) {
+            if (i == 0) {
                 sum += times[i];
-            }
-            else {
+            } else {
                 times[i] += times[i - 1];
                 sum += times[i];
             }
