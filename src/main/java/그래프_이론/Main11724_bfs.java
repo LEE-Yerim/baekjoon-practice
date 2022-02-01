@@ -1,3 +1,5 @@
+package 그래프_이론;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -37,7 +39,7 @@ public class Main11724_bfs {
                 count++;
             }
         }
-        //모든 node들에 대하여 방문하지 않았다면 너비우선탐색해주기
+        //모든 node들에 대하여 방문하지 않았다면 깊이우선탐색해주기
 
         System.out.println(count);
     }
