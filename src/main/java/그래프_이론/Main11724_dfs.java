@@ -1,3 +1,5 @@
+package 그래프_이론;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -20,7 +22,6 @@ public class Main11724_dfs {
         for (int i = 1; i <= n; i++) {
             map.put(i, new ArrayList<>());
         }
-        //node들로 map 만들기
 
         for (int i = 0; i < m; i++) {
             String edge = br.readLine();
@@ -30,7 +31,6 @@ public class Main11724_dfs {
             map.get(u).add(v);
             map.get(v).add(u);
         }
-        //node들에 인접노드리스트 설정해주기
 
         visited = new boolean[n + 1];
         int count = 0;
@@ -40,8 +40,6 @@ public class Main11724_dfs {
                 count++;
             }
         }
-        //모든 node들에 대하여 방문하지 않았다면 깊이우선탐색해주기
-
         System.out.println(count);
     }
 
