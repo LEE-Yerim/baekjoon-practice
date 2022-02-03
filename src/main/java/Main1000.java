@@ -1,11 +1,19 @@
 import java.util.Scanner;
 
 public class Main1000 {
-    private Scanner scanner = new Scanner(System.in);
-    public void addition() {
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
+    private static Scanner scanner = new Scanner(System.in);
+    public static void addition() {
+        String numbers = scanner.nextLine();
 
-        System.out.println(a+b);
+        int sum = 0;
+        for(String number : numbers.split(" ")) {
+            sum += Integer.parseInt(number);
+        }
+
+        System.out.println(sum);
+    }
+
+    public static void main(String[] args) {
+        addition();
     }
 }
