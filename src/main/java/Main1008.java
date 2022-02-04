@@ -7,7 +7,7 @@ public class Main1008 {
     private static final BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
     public static void solution() throws IOException {
-        int[] operands = Arrays.stream(bf.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        double[] operands = Arrays.stream(bf.readLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
         System.out.println(operands[0] / operands[1]);
     }
 
