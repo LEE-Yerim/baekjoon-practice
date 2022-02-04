@@ -9,17 +9,14 @@ public class Main2439 {
         int N = Integer.parseInt(br.readLine());
         br.close();
 
-        StringBuilder sb = new StringBuilder();
-
         for (int i = 1; i <= N; i++) {
             for (int j = 1; j <= N - i; j++) {
-                sb.append(' ');
+                System.out.print(" ");
             }
             for (int k = 1; k <= i; k++) {
-                sb.append('*');
+                System.out.print("*");
             }
-            sb.append('\n');
+            System.out.println();
         }
-        System.out.print(sb);
     }
 }
