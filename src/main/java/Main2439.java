@@ -7,6 +7,7 @@ public class Main2439 {
 
     public static void main(String[] args) throws IOException {
         int n = Integer.parseInt(br.readLine());
+        br.close();
         for (int i = 1; i <= n; i++) {
             for (int j = 0; j < 5 - i; j++) {
                 System.out.print(" ");
