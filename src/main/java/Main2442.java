@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//별찍기5
 public class Main2442 {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -13,9 +14,6 @@ public class Main2442 {
             }
             for (int j = 0; j < i * 2 + 1; j++) {
                 System.out.print("*");
-            }
-            for (int j = 0; j < n - 1 - i; j++) {
-                System.out.print(" ");
             }
             System.out.println();
         }
