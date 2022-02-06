@@ -1,29 +1,36 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
+//단어 공부
 public class Main1157 {
-    private static BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+    private static final BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
     public static void solution() throws IOException {
         String word = bf.readLine().toUpperCase();
         List<String> characters = new ArrayList<>();
-        for (String character : word.split("")) {
-            characters.add(character);
-        }
-        Map<String, Integer> count = new HashMap<>();
+        List<String> characterList = new ArrayList<>();
+        List<Integer> countList = new ArrayList<>();
+        Collections.addAll(characters, word.split(""));
         for (String character : characters) {
-            count.put(character, Collections.frequency(characters, character));
+            if (!characterList.contains(character)) {
+                characterList.add(character);
+            }
+        }
+        for (String character : characterList) {
+            countList.add(Collections.frequency(characters, character));
         }
         int maxCount = 0;
-        for (int number : count.values()) {
+        for (int number : countList) {
             maxCount = Math.max(maxCount, number);
         }
         List<String> answerList = new ArrayList<>();
-        for (Map.Entry<String, Integer> entry : count.entrySet()) {
-            if (entry.getValue() == maxCount) {
-                answerList.add(entry.getKey());
+        for (int i = 0; i < countList.size(); i++) {
+            if (countList.get(i) == maxCount) {
+                answerList.add(characterList.get(i));
             }
         }
         if (answerList.size() == 1) {
