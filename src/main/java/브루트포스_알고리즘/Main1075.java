@@ -1,9 +1,11 @@
 package 브루트포스_알고리즘;
 
+// import java.io.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//나누기
 public class Main1075 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
