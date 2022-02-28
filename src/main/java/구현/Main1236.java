@@ -1,10 +1,13 @@
 package 구현;
 
+// import java.io.*;
+// import java.util.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+//성 지키기
 public class Main1236 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
