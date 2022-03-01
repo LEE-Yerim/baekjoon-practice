@@ -1,9 +1,11 @@
 package 문자열;
 
+// import java.io.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//팰린드롬수
 public class Main1259 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
