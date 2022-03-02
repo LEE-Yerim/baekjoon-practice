@@ -1,5 +1,7 @@
 package 그리디_알고리즘;
 
+// import java.io.*;
+// import java.util.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//잃어버린 괄호
 public class Main1541 {
     private static final BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
