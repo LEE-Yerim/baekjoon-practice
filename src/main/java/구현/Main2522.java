@@ -1,9 +1,11 @@
 package 구현;
 
+// import java.io.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//별찍기12
 public class Main2522 {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
