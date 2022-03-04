@@ -1,9 +1,11 @@
 package 정수론_및_조합론;
 
+// import java.io.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//최대공약수와 최소공배수
 public class Main2609 {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
