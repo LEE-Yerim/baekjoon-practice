@@ -1,10 +1,12 @@
 package DFS와_BFS;
 
+// import java.io.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+//단지번호붙이기
 public class Main2667 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final int[] d_row = {-1, 0, 0, 1};
