@@ -1,21 +1,16 @@
 //import java.io.*;
-//import java.util.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Collections;
 
-//소트인사이드
-public class Main1427 {
+//구구단
+public class Main2739 {
     private static final BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
     public static void solution() throws IOException {
-        String N = bf.readLine();
-        String[] digits = N.split("");
-        Arrays.sort(digits, Collections.reverseOrder());
-        for(String digit : digits) {
-            System.out.print(digit);
+        int n = Integer.parseInt(bf.readLine());
+        for (int i = 1; i <= 9; i++) {
+            System.out.println(n + " * " + i + " = " + n * i);
         }
     }
 
