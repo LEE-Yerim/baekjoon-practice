@@ -1,10 +1,12 @@
 package 기본_수학_2;
 
 import java.io.*;
+// import java.util.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+//네번째 점
 public class Main3009 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
