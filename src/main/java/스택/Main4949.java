@@ -1,10 +1,13 @@
 package 스택;
 
+// import java.io.*;
+// import java.util.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
+//균형잡힌 세상
 public class Main4949 {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
