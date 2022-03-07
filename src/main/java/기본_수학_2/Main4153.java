@@ -1,8 +1,10 @@
 package 기본_수학_2;
 
 import java.io.*;
+// import java.util.*;
 import java.util.Arrays;
 
+//직각삼각형
 public class Main4153 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
