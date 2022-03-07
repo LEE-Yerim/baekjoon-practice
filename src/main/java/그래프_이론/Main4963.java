@@ -1,9 +1,11 @@
 package 그래프_이론;
 
+// import java.io.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//섬의 개수
 public class Main4963 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final int[] d_col = {-1, -1, -1, 0, 0, 1, 1, 1};
