@@ -1,9 +1,11 @@
 package 정수론_및_조합론;
 
+// import java.io.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//이항 계수1
 public class Main11050 {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
