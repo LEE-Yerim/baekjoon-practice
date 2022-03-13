@@ -26,7 +26,7 @@ public class Main5525 {
     }
 
     public static boolean check(int i) {
-        for (int j = 0; j < n / 2; j++) {
+        for (int j = 1; j <= n / 2; j++) {
             if (!s[i + j].equals("O") || !s[i + j + 1].equals("I")) {
                 return false;
             }
