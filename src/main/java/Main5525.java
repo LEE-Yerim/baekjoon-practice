@@ -13,7 +13,7 @@ public class Main5525 {
         int m = Integer.parseInt(br.readLine());
         s = br.readLine().split("");
         int count = 0;
-        for (int i = 0; i < s.length; i++) {
+        for (int i = 0; i < s.length - m + 1; i++) {
             if (s[i].equals("I")) {
                 if (check(i)) {
                     count++;
