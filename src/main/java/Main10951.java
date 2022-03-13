@@ -11,7 +11,7 @@ public class Main10951 {
         boolean flag = true;
         while (flag) {
             String input = br.readLine();
-            if (!input.isEmpty()) {
+            if (!input.isBlank()) {
                 int[] numbers = Arrays.stream(input.split(" ")).mapToInt(Integer::parseInt).toArray();
                 int sum = 0;
                 for(int number : numbers) {
@@ -19,7 +19,7 @@ public class Main10951 {
                 }
                 System.out.println(sum);
             }
-            if (input.isEmpty()) {
+            if (input.isBlank()) {
                 flag = false;
             }
         }
