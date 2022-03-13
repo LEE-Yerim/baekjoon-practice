@@ -5,33 +5,27 @@ public class Main5525 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-    public static int n;
-    public static String[] s;
-
     public static void solution() throws IOException {
-        n = Integer.parseInt(br.readLine());
+        int n = Integer.parseInt(br.readLine());
         int m = Integer.parseInt(br.readLine());
-        s = br.readLine().split("");
+        String[] s = br.readLine().split("");
+        int index = 1 + n * 2;
         int count = 0;
-        for (int i = 0; i < s.length - m + 1; i++) {
+        for (int i = 0; i < s.length - index + 1; i++) {
             if (s[i].equals("I")) {
-                if (check(i)) {
+                boolean flag = true;
+                for (int j = 0; j < index / 2; j++) {
+                    if (!s[i + j * 2 + 1].equals("O") || !s[i + j * 2 + 2].equals("I")) {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag) {
                     count++;
                 }
             }
         }
-        bw.write(Integer.toString(count));
-        bw.flush();
-        bw.close();
-    }
-
-    public static boolean check(int i) {
-        for (int j = 1; j <= n / 2; j++) {
-            if (!s[i + j].equals("O") || !s[i + j + 1].equals("I")) {
-                return false;
-            }
-        }
-        return true;
+        System.out.println(count);
     }
 
     public static void main(String[] args) throws IOException {
