@@ -14,8 +14,9 @@ public class Main5525 {
             if (s[i].equals("I")) {
                 boolean flag = true;
                 for (int j = 0; j < n / 2; j++) {
-                    if (s[i + j].equals("O") && s[i + j + 1].equals("I")) {
+                    if (!s[i + j].equals("O") || !s[i + j + 1].equals("I")) {
                         flag = false;
+                        break;
                     }
                 }
                 if (flag) {
