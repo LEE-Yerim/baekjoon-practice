@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 // 최소, 최대
 public class Main10818 {
@@ -9,7 +8,11 @@ public class Main10818 {
 
     public static void solution() throws IOException {
         int n = Integer.parseInt(bf.readLine());
-        int[] numbers = Arrays.stream(bf.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        String[] inputNumbers = bf.readLine().split(" ");
+        int[] numbers = new int[n];
+        for (int i = 0; i < n; i++) {
+            numbers[i] = Integer.parseInt(inputNumbers[i]);
+        }
         int minNumber = 1_000_000;
         for (int number : numbers) {
             minNumber = Math.min(minNumber, number);
