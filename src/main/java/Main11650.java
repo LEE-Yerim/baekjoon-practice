@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-//좌표 정렬하기
+// 좌표 정렬하기
 public class Main11650 {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
