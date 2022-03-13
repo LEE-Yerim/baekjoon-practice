@@ -1,10 +1,9 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 // IOIOI
 public class Main5525 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     public static void solution() throws IOException {
         int n = Integer.parseInt(br.readLine());
@@ -24,7 +23,9 @@ public class Main5525 {
                 }
             }
         }
-        System.out.println(count);
+        bw.write(Integer.toString(count));
+        bw.flush();
+        bw.close();
     }
 
     public static void main(String[] args) throws IOException {
