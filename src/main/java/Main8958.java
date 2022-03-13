@@ -1,41 +1,37 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 // OX퀴즈
-public class Main8958 {
-    private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-    public static void main(String[] args) throws IOException {
-        String[] alphabets = br.readLine().split("");
-        int sum = 0;
-        for (String alphabet : alphabets) {
-            int ascii = (int) alphabet.charAt(0);
-            if (65 <= ascii && ascii <= 67) {
-                sum += 2 + 1;
+public class Main {
+    public static void solution() {
+        int number = inputNumber();
+        for (int i = 0; i < number; i++) {
+            String test = inputString();
+            int count = 0;
+            int sum = 0;
+            for (String mission : test.split("")) {
+                if (mission.equals("O")) {
+                    sum += 1 + count;
+                    count++;
+                }
+                if (mission.equals("X")) {
+                    count = 0;
+                }
             }
-            if (68 <= ascii && ascii <= 70) {
-                sum += 2 + 2;
-            }
-            if (71 <= ascii && ascii <= 73) {
-                sum += 2 + 3;
-            }
-            if (74 <= ascii && ascii <= 76) {
-                sum += 2 + 4;
-            }
-            if (77 <= ascii && ascii <= 79) {
-                sum += 2 + 5;
-            }
-            if (80 <= ascii && ascii <= 83) {
-                sum += 2 + 6;
-            }
-            if (84 <= ascii && ascii <= 86) {
-                sum += 2 + 7;
-            }
-            if (87 <= ascii && ascii <= 90) {
-                sum += 2 + 8;
-            }
+            System.out.println(sum);
         }
-        System.out.println(sum);
+    }
+
+    private static int inputNumber() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
+    }
+
+    private static String inputString() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
+    }
+
+    public static void main(String[] args) {
+        solution();
     }
 }
