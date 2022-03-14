@@ -1,5 +1,3 @@
-// import java.io.*;
-// import java.util.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-//듣보잡
+// 듣보잡
 public class Main1764 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
