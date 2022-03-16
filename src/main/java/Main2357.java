@@ -1,10 +1,9 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 // 최솟값과 최댓값
 public class Main2357 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     public static void solution() throws IOException {
         String[] size = br.readLine().split(" ");
@@ -22,8 +21,11 @@ public class Main2357 {
                 min = Math.min(min, numbers[j]);
                 max = Math.max(max, numbers[j]);
             }
-            System.out.println(min + " " + max);
+            bw.write(min + " " + max);
+            bw.newLine();
         }
+        bw.flush();
+        bw.close();
     }
 
     public static void main(String[] args) throws IOException {
