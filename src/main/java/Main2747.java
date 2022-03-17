@@ -1,8 +1,8 @@
-// import java.io.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// 피보나치 수
 public class Main2747 {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
