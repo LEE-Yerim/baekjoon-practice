@@ -1,8 +1,12 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 // OX퀴즈
-public class Main {
-    public static void solution() {
+public class Main8958 {
+    private static BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+
+    public static void solution() throws IOException {
         int number = inputNumber();
         for (int i = 0; i < number; i++) {
             String test = inputString();
@@ -21,17 +25,15 @@ public class Main {
         }
     }
 
-    private static int inputNumber() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
+    private static int inputNumber() throws IOException {
+        return Integer.parseInt(bf.readLine());
     }
 
-    private static String inputString() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
+    private static String inputString() throws IOException {
+        return bf.readLine();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         solution();
     }
 }
