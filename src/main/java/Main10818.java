@@ -17,7 +17,7 @@ public class Main10818 {
         for (int number : numbers) {
             minNumber = Math.min(minNumber, number);
         }
-        int maxNumber = 0;
+        int maxNumber = -1_000_000;
         for (int number : numbers) {
             maxNumber = Math.max(maxNumber, number);
         }
