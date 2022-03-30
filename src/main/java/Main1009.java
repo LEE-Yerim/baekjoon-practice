@@ -3,6 +3,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// 분산처리
 public class Main1009 {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
