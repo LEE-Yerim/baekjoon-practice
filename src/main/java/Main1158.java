@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+// 요세푸스 문제
 public class Main1158 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
